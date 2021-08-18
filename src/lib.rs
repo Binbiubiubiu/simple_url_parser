@@ -50,7 +50,7 @@ fn end_with<'a>(split: &'a str) -> impl FnMut(&'a str) -> IResult<&'a str, &'a s
 /// URL class
 /// format code:
 /// [scheme:]//[user[:password]@]host[:port][/path][?query][#hash]
-#[derive(Debug)]
+#[derive(Clone,Debug,PartialEq,Eq)]
 pub struct URL { 
    pub scheme: String,
    pub username: String,
