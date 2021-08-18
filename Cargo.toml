@@ -17,7 +17,8 @@ include = [
   ".gitignore",
   "Cargo.toml",
   "src/*.rs",
-  "src/*/*.rs"
+  "src/*/*.rs",
+  "tests/*.rs"
 ]
 
 
