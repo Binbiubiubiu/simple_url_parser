@@ -1,7 +1,24 @@
 [package]
 name = "simple_url_parser"
 version = "0.0.1"
+authors = ["Simon-Bin <2632003786@qq.com>"]
+description = "A simple parser for URL"
+license = "MIT"
+repository = "https://github.com/Simon-Bin/simple_url_parser"
+readme = "README.md"
+documentation = "https://docs.rs/simple_url_parser"
+keywords = ["parser", "url-parser"]
+categories = ["parsing"]
 edition = "2018"
+
+include = [
+  "LICENSE",
+  "README.md",
+  ".gitignore",
+  "Cargo.toml",
+  "src/*.rs",
+  "src/*/*.rs"
+]
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

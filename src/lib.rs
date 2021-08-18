@@ -22,7 +22,7 @@ struct URL {
     scheme: String,
     username: String,
     password: String,
-    origin:String,
+    origin: String,
     host: String,
     port: String,
     path: String,
@@ -60,7 +60,7 @@ impl URL {
             scheme: String::from(scheme),
             username: String::from(username),
             password: String::from(password),
-            origin:format!("{}:{}",host,port),
+            origin: format!("{}:{}", host, port),
             host: String::from(host),
             port: String::from(port),
             path: String::from(path),
@@ -78,7 +78,10 @@ impl URL {
             }
         }
 
-        format!("{}{}{}{}{}",link,obj.origin,obj.path,obj.query,obj.hash)
+        format!(
+            "{}{}{}{}{}",
+            link, obj.origin, obj.path, obj.query, obj.hash
+        )
     }
 
     fn parse_scheme(i: &str) -> IResult<&str, &str> {
@@ -108,7 +111,7 @@ impl URL {
     }
 
     fn parse_hash(i: &str) -> IResult<&str, &str> {
-        preceded(peek(opt(tag("#"))), take_while(|c:char|c!=' '))(i)
+        preceded(peek(opt(tag("#"))), take_while(|c: char| c != ' '))(i)
     }
 }
 
@@ -120,7 +123,6 @@ mod tests {
     fn test_url_parser() {
         let mock_url = "https://lb:123456@www.google.com:123/blog/01?a=1&b=2#132456";
         let url_obj = URL::parse(mock_url).unwrap();
-
 
         assert_eq!(url_obj.scheme, "https:");
         assert_eq!(url_obj.username, "lb");
