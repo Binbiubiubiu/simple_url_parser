@@ -1,6 +1,6 @@
 [package]
 name = "simple_url_parser"
-version = "0.0.3"
+version = "0.0.4"
 authors = ["Binbiubiubiu <2632003786@qq.com>"]
 description = "A simple parser for URL"
 license = "MIT"

@@ -26,7 +26,11 @@ dependencies = [
 
 [[package]]
 name = "simple_url_parser"
+<<<<<<< HEAD
 version = "0.0.3"
+=======
+version = "0.0.4"
+>>>>>>> ae6334f (chore: v0.0.4)
 dependencies = [
  "nom",
 ]
