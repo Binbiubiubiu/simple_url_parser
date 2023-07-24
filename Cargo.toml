@@ -1,15 +1,15 @@
 [package]
 name = "simple_url_parser"
-version = "0.0.2"
-authors = ["Simon-Bin <2632003786@qq.com>"]
+version = "0.0.3"
+authors = ["Binbiubiubiu <2632003786@qq.com>"]
 description = "A simple parser for URL"
 license = "MIT"
-repository = "https://github.com/Simon-Bin/simple_url_parser"
+repository = "https://github.com/Binbiubiubiu/simple_url_parser"
 readme = "README.md"
 documentation = "https://docs.rs/simple_url_parser"
 keywords = ["parser", "url-parser"]
 categories = ["parsing"]
-edition = "2018"
+edition = "2021"
 
 include = [
   "LICENSE",
